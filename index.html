@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Sinchana N | Software Engineering Student &amp; Developer</title>
+  <meta name="description" content="Portfolio of Sinchana N, a Software Engineering student passionate about crafting intuitive software, scalable web systems, and creative digital experiences.">
+  <meta name="author" content="Sinchana N">
+  <meta name="keywords" content="Sinchana N, Software Engineer, Computer Science, Full-Stack Developer, Portfolio, Student, Web Development">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Sinchana N | Software Engineering Portfolio">
+  <meta property="og:description" content="Software should feel intuitive & human. Explore my projects, skills, timeline, and journey.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Caveat (handwritten), DM Serif Display (editorial), Inter (body), JetBrains Mono (tech) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-journal-dark">
+
+  <!-- =================================================================== -->
+  <!-- VERTICAL NAVIGATION BAR (LEFT SIDE OF SCREEN)                       -->
+  <!-- Fixed, accessible, responsive vertical rail with decorative stamps   -->
+  <!-- =================================================================== -->
+  <aside class="vertical-nav-rail" id="vertical-nav" aria-label="Primary Navigation">
+    <div class="rail-inner">
+
+      <!-- Brand Stamp Logo at top of the rail -->
+      <a href="#hero" class="rail-brand-stamp" aria-label="Sinchana N - Return to Top">
+        <span class="stamp-icon" aria-hidden="true">S:&#41;</span>
+        <span class="tooltip-label">Home</span>
+      </a>
+
+      <!-- Vertical Links: Home, About, Skills, Timeline, Projects, Testimonials, Chats, Contacts -->
+      <nav class="rail-navigation" aria-label="Section links">
+        <ul class="rail-nav-list" role="list">
+          
+          <!-- 1. Home -->
+          <li class="rail-nav-item">
+            <a href="#hero" class="rail-link active" data-section="hero" aria-label="Home section">
+              <svg class="rail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              <span class="tooltip-label">Home</span>
+            </a>
+          </li>
+
+          <!-- 2. About Me -->
+          <li class="rail-nav-item">
+            <a href="#about" class="rail-link" data-section="about" aria-label="About Me section">
+              <svg class="rail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span class="tooltip-label">About Me</span>
+            </a>
+          </li>
+
+          <!-- 3. Skills -->
+          <li class="rail-nav-item">
+            <a href="#skills" class="rail-link" data-section="skills" aria-label="Skills section">
+              <svg class="rail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span class="tooltip-label">Skills</span>
+            </a>
+          </li>
+
+          <!-- 4. Timeline -->
+          <li class="rail-nav-item">
+            <a href="#timeline" class="rail-link" data-section="timeline" aria-label="Timeline section">
+              <svg class="rail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span class="tooltip-label">Timeline</span>
+            </a>
+          </li>
+
+          <!-- 5. Projects -->
+          <li class="rail-nav-item">
+            <a href="#projects" class="rail-link" data-section="projects" aria-label="Projects section">
+              <svg class="rail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              <span class="tooltip-label">Projects</span>
+            </a>
+          </li>
+
+          <!-- 6. Testimonials -->
+          <li class="rail-nav-item">
+            <a href="#testimonials" class="rail-link" data-section="testimonials" aria-label="Testimonials section">
+              <svg class="rail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                <path d="M8 10h.01"></path>
+                <path d="M12 10h.01"></path>
+                <path d="M16 10h.01"></path>
+              </svg>
+              <span class="tooltip-label">Testimonials</span>
+            </a>
+          </li>
+
+          <!-- 7. Chats -->
+          <li class="rail-nav-item">
+            <a href="#chats" class="rail-link" data-section="chats" aria-label="Chats and Q&A section">
+              <svg class="rail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+              </svg>
+              <span class="tooltip-label">Chats</span>
+            </a>
+          </li>
+
+          <!-- 8. Contacts -->
+          <li class="rail-nav-item">
+            <a href="#contact" class="rail-link" data-section="contact" aria-label="Contacts section">
+              <svg class="rail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span class="tooltip-label">Contacts</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Bottom playful stamp from theme reference :) -->
+      <div class="rail-footer">
+        <a href="#chats" class="rail-smiley-badge" aria-label="Say hello to Sinchana" title="Say hello :)">
+          :&#41;
+        </a>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- Mobile Floating Nav Toggle for accessibility -->
+  <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span class="toggle-icon-bar"></span>
+    <span class="toggle-icon-bar"></span>
+    <span class="toggle-icon-bar"></span>
+  </button>
+
+  <!-- =================================================================== -->
+  <!-- MAIN SITE WRAPPER (Offset to accommodate the vertical rail)        -->
+  <!-- =================================================================== -->
+  <div class="site-main-wrapper">
+
+    <!-- Top Minimal Header with Theme & Social Links -->
+    <header class="top-journal-header" id="top-header">
+      <div class="container top-header-container">
+        <div class="header-mood">
+          <span class="mood-smiley">:&#41;</span>
+          <span class="mood-text">Software Engineer in the Making</span>
+        </div>
+        <div class="quick-nav-pill">
+          <a href="#about">about</a>
+          <span class="pill-dot">&bull;</span>
+          <a href="#projects">work</a>
+          <span class="pill-dot">&bull;</span>
+          <a href="#contact">connect</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- 1. HERO SECTION (THE JOURNAL NOTEBOOK THEME)                      -->
+    <!-- Designed around the aesthetic provided in my theam.jfif:          -->
+    <!-- Terracotta hardcover, cream grid pages, hand-script signature,    -->
+    <!-- bold editorial serif statement, and welcoming tagline.            -->
+    <!-- ================================================================= -->
+    <main id="main-content">
+      <section class="hero-journal-section" id="hero" aria-labelledby="hero-title">
+        
+        <!-- Ambient Background Stamp Columns mimicking the theme reference -->
+        <div class="ambient-stamps-rail ambient-left" aria-hidden="true">
+          <span class="stamp-glyph">&#127807;</span>
+          <span class="stamp-glyph">&lt;/&gt;</span>
+          <span class="stamp-glyph">&#9749;</span>
+          <span class="stamp-glyph">&#129417;</span>
+          <span class="stamp-glyph">&#9881;</span>
+        </div>
+        <div class="ambient-stamps-rail ambient-right" aria-hidden="true">
+          <span class="stamp-glyph">&#127836;</span>
+          <span class="stamp-glyph">&#128018;</span>
+          <span class="stamp-glyph">&#128187;</span>
+          <span class="stamp-glyph">&#127775;</span>
+          <span class="stamp-glyph">&#10024;</span>
+        </div>
+
+        <div class="container hero-center-container">
+          
+          <!-- The Centerpiece: Open Notebook Container -->
+          <div class="notebook-outer-frame">
+            
+            <!-- Hanging Ribbon Bookmark Accent -->
+            <div class="notebook-ribbon" aria-hidden="true"></div>
+
+            <!-- Double-Page Open Journal Notebook -->
+            <div class="notebook-inner-book">
+
+              <!-- Left Notebook Page: Editorial Pitch & Welcome Tagline -->
+              <div class="notebook-page page-left">
+                <div class="page-grid-overlay" aria-hidden="true"></div>
+                
+                <div class="page-content">
+                  
+                  <!-- Handwritten Name Script matching theme -->
+                  <div class="handwritten-signature">
+                    <span class="sig-name">Sinchana</span>
+                    <span class="sig-smile">:&#41;</span>
+                  </div>
+
+                  <!-- Professional Role Subtitle -->
+                  <p class="role-subtitle">Software Engineering Student</p>
+
+                  <!-- Welcoming Headline & Brief Tagline -->
+                  <h1 id="hero-title" class="editorial-headline">
+                    Software should <br>
+                    <span class="editorial-emphasis">feel intuitive</span>
+                  </h1>
+
+                  <!-- Welcoming Brief Tagline -->
+                  <p class="welcome-brief-tagline">
+                    Hello &amp; welcome to my portfolio! I build reliable, user-centered web applications, explore smart algorithms, and craft software designed with clarity and purpose.
+                  </p>
+
+                  <!-- Meta Info Pill (Location & Time) -->
+                  <div class="notebook-meta-row">
+                    <span class="meta-dot"></span>
+                    <span class="meta-text">Bengaluru, India &bull; GMT +05:30</span>
+                  </div>
+
+                  <!-- Call to Action Buttons -->
+                  <div class="notebook-actions">
+                    <a href="#projects" class="btn-notebook-primary">Explore Work &rarr;</a>
+                    <a href="#contact" class="btn-notebook-secondary">Say Hello :&#41;</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Center Spine Fold Shadow -->
+              <div class="notebook-spine-shadow" aria-hidden="true"></div>
+
+              <!-- Right Notebook Page: Retro Window Frame & Sinchana's Photo -->
+              <div class="notebook-page page-right">
+                <div class="page-grid-overlay" aria-hidden="true"></div>
+
+                <div class="page-content page-right-content">
+                  
+                  <!-- Retro Hand-Drawn Window Frame (UNTITLED - matching the reference art) -->
+                  <div class="sketch-window-box">
+                    <div class="sketch-window-header">
+                      <div class="sketch-controls">
+                        <span class="sketch-ctrl"></span>
+                        <span class="sketch-ctrl"></span>
+                        <span class="sketch-ctrl"></span>
+                      </div>
+                      <span class="sketch-title">UNTITLED &bull; Sinchana.dev</span>
+                    </div>
+
+                    <div class="sketch-window-body">
+                      <!-- Sinchana's Photo Frame -->
+                      <figure class="portrait-photo-wrapper">
+                        <img src="Sinchana N Photo.jpeg" alt="Sinchana N - Software Engineering Student" class="sketch-portrait-img">
+                        <figcaption class="visually-hidden">Portrait of Sinchana N</figcaption>
+                      </figure>
+
+                      <!-- Playful Hand-sketched Tags below photo -->
+                      <div class="sketch-badge-row">
+                        <span class="sketch-badge">&#128187; Full-Stack</span>
+                        <span class="sketch-badge">&#9889; Problem Solver</span>
+                        <span class="sketch-badge">&#128640; CS &apos;27</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Playful botanical & coffee sketch notes -->
+                  <div class="page-marginalia">
+                    <span class="marginalia-note">&#10024; Turning ideas into clean code</span>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bottom Paper Tab mirroring "3 things I strongly believe in" -->
+            <div class="notebook-bottom-tab">
+              <span class="tab-label">3 things I strongly believe in:</span>
+              <span class="tab-items">1. Clean Readable Code &bull; 2. Empathy for the User &bull; 3. Never Stop Learning</span>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- 2. ABOUT ME SECTION                                             -->
+      <!-- =============================================================== -->
+      <section class="content-section" id="about" aria-labelledby="about-heading">
+        <div class="container section-inner">
+          <header class="section-title-wrap">
+            <span class="section-number">01. Overview</span>
+            <h2 id="about-heading" class="section-title">About Me</h2>
+            <p class="section-subtext">Passionate about computing, problem solving, and building delightful user experiences</p>
+          </header>
+
+          <div class="grid-two-col">
+            <article class="journal-card">
+              <h3 class="card-heading">Engineering Background</h3>
+              <p>
+                I am a Software Engineering undergraduate with a deep fascination for how software impacts daily human life. From architecting responsive frontends to writing efficient algorithms and designing backend schemas, I enjoy every phase of software development.
+              </p>
+              <p>
+                My academic journey emphasizes strong fundamentals in Computer Science—including Object-Oriented Design, Operating Systems, Database Management Systems, and Data Structures.
+              </p>
+              
+              <div class="stats-pills-row">
+                <div class="stat-pill">
+                  <span class="stat-num">B.E.</span>
+                  <span class="stat-desc">Software Eng. / CS</span>
+                </div>
+                <div class="stat-pill">
+                  <span class="stat-num">10+</span>
+                  <span class="stat-desc">Completed Projects</span>
+                </div>
+                <div class="stat-pill">
+                  <span class="stat-num">100%</span>
+                  <span class="stat-desc">Curiosity &amp; Drive</span>
+                </div>
+              </div>
+            </article>
+
+            <aside class="journal-card stamp-card" aria-label="Personal Highlights">
+              <h3 class="card-heading">Quick Facts</h3>
+              <ul class="facts-list" role="list">
+                <li><strong>Current Focus:</strong> Full-Stack Web Development &amp; Cloud Fundamentals</li>
+                <li><strong>Favorite Stack:</strong> React, Node.js, Express, PostgreSQL</li>
+                <li><strong>Languages:</strong> Java, Python, C++, JavaScript</li>
+                <li><strong>Location:</strong> Karnataka, India (GMT +05:30)</li>
+                <li><strong>Current Status:</strong> <span class="status-available">Available for Internships</span></li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- 3. SKILLS SECTION                                               -->
+      <!-- =============================================================== -->
+      <section class="content-section alternate-bg" id="skills" aria-labelledby="skills-heading">
+        <div class="container section-inner">
+          <header class="section-title-wrap">
+            <span class="section-number">02. Capabilities</span>
+            <h2 id="skills-heading" class="section-title">Skills &amp; Technologies</h2>
+            <p class="section-subtext">The programming languages, frameworks, and tools in my software developer toolkit</p>
+          </header>
+
+          <div class="grid-four-col">
+            
+            <article class="skill-stamp-card">
+              <div class="skill-icon-box">&lt;/&gt;</div>
+              <h3 class="skill-group-title">Languages</h3>
+              <p class="skill-group-desc">Core programming languages for algorithms &amp; logic</p>
+              <ul class="tag-cloud" role="list">
+                <li class="tag-item">Java</li>
+                <li class="tag-item">Python</li>
+                <li class="tag-item">C / C++</li>
+                <li class="tag-item">JavaScript (ES6+)</li>
+                <li class="tag-item">SQL</li>
+              </ul>
+            </article>
+
+            <article class="skill-stamp-card">
+              <div class="skill-icon-box">&#127760;</div>
+              <h3 class="skill-group-title">Frontend</h3>
+              <p class="skill-group-desc">Building accessible, aesthetic user interfaces</p>
+              <ul class="tag-cloud" role="list">
+                <li class="tag-item">HTML5 Semantic</li>
+                <li class="tag-item">CSS3 / Flexbox / Grid</li>
+                <li class="tag-item">React.js</li>
+                <li class="tag-item">Responsive Design</li>
+                <li class="tag-item">DOM Architecture</li>
+              </ul>
+            </article>
+
+            <article class="skill-stamp-card">
+              <div class="skill-icon-box">&#9881;</div>
+              <h3 class="skill-group-title">Backend &amp; DB</h3>
+              <p class="skill-group-desc">Creating RESTful APIs, schemas, and services</p>
+              <ul class="tag-cloud" role="list">
+                <li class="tag-item">Node.js</li>
+                <li class="tag-item">Express</li>
+                <li class="tag-item">MySQL</li>
+                <li class="tag-item">PostgreSQL</li>
+                <li class="tag-item">REST APIs</li>
+              </ul>
+            </article>
+
+            <article class="skill-stamp-card">
+              <div class="skill-icon-box">&#128736;</div>
+              <h3 class="skill-group-title">CS &amp; Tools</h3>
+              <p class="skill-group-desc">Core computer science theory and workflow tools</p>
+              <ul class="tag-cloud" role="list">
+                <li class="tag-item">Data Structures</li>
+                <li class="tag-item">Algorithms (DSA)</li>
+                <li class="tag-item">OOP Principles</li>
+                <li class="tag-item">Git &amp; GitHub</li>
+                <li class="tag-item">VS Code &amp; Linux</li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- 4. TIMELINE SECTION                                             -->
+      <!-- =============================================================== -->
+      <section class="content-section" id="timeline" aria-labelledby="timeline-heading">
+        <div class="container section-inner">
+          <header class="section-title-wrap">
+            <span class="section-number">03. Career &amp; Education</span>
+            <h2 id="timeline-heading" class="section-title">Timeline &amp; Milestones</h2>
+            <p class="section-subtext">A chronological walkthrough of my academic journey, internships, and growth</p>
+          </header>
+
+          <div class="timeline-container">
+            <ol class="journal-timeline-list" role="list">
+              
+              <!-- Timeline Milestone 1 -->
+              <li class="timeline-entry">
+                <div class="timeline-pin" aria-hidden="true"></div>
+                <article class="journal-card timeline-card">
+                  <header class="entry-header">
+                    <span class="entry-tag education-tag">Undergraduate</span>
+                    <time class="entry-date" datetime="2023/2027">2023 &mdash; Present</time>
+                  </header>
+                  <h3 class="entry-title">Bachelor of Engineering &bull; Computer Science</h3>
+                  <h4 class="entry-subtitle">Engineering College / University</h4>
+                  <p class="entry-body">
+                    Studying core computer science curriculum: Data Structures &amp; Algorithms, Object Oriented Systems, Operating Systems, Computer Networks, and Database Management.
+                  </p>
+                </article>
+              </li>
+
+              <!-- Timeline Milestone 2 -->
+              <li class="timeline-entry">
+                <div class="timeline-pin" aria-hidden="true"></div>
+                <article class="journal-card timeline-card">
+                  <header class="entry-header">
+                    <span class="entry-tag work-tag">Internship</span>
+                    <time class="entry-date" datetime="2025">Summer 2025</time>
+                  </header>
+                  <h3 class="entry-title">Software Engineering Intern</h3>
+                  <h4 class="entry-subtitle">Tech Organization / Software Lab</h4>
+                  <p class="entry-body">
+                    Contributed to full-stack feature development, resolved frontend responsive issues, improved database querying performance, and collaborated through Agile sprints.
+                  </p>
+                </article>
+              </li>
+
+              <!-- Timeline Milestone 3 -->
+              <li class="timeline-entry">
+                <div class="timeline-pin" aria-hidden="true"></div>
+                <article class="journal-card timeline-card">
+                  <header class="entry-header">
+                    <span class="entry-tag foundation-tag">Foundation</span>
+                    <time class="entry-date" datetime="2021/2023">2021 &mdash; 2023</time>
+                  </header>
+                  <h3 class="entry-title">Pre-University Education (PCMB)</h3>
+                  <h4 class="entry-subtitle">Pre-University College</h4>
+                  <p class="entry-body">
+                    Completed senior secondary education focusing on Mathematics and Sciences with high academic standing, building the analytical groundwork for engineering.
+                  </p>
+                </article>
+              </li>
+
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- 5. PROJECTS SECTION                                             -->
+      <!-- =============================================================== -->
+      <section class="content-section alternate-bg" id="projects" aria-labelledby="projects-heading">
+        <div class="container section-inner">
+          <header class="section-title-wrap">
+            <span class="section-number">04. Selected Work</span>
+            <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+            <p class="section-subtext">Software applications, algorithms, and interactive systems I have crafted</p>
+          </header>
+
+          <div class="grid-three-col">
+
+            <!-- Project 1 -->
+            <article class="journal-card project-notebook-card">
+              <div class="project-top-row">
+                <span class="project-badge">Full-Stack App</span>
+                <div class="project-actions">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="link-stamp" aria-label="GitHub Repository for Campus Portal">Code &nearr;</a>
+                  <a href="#" class="link-stamp" aria-label="Live Demo for Campus Portal">Demo &nearr;</a>
+                </div>
+              </div>
+              <h3 class="project-name">Smart Campus Management Hub</h3>
+              <p class="project-desc">
+                A unified student portal managing course enrollments, attendance records, and faculty notifications with JWT token authentication and role-based permissions.
+              </p>
+              <ul class="tech-pills" role="list">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MySQL</li>
+              </ul>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="journal-card project-notebook-card">
+              <div class="project-top-row">
+                <span class="project-badge">Interactive Visualizer</span>
+                <div class="project-actions">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="link-stamp" aria-label="GitHub Repository for Pathfinding Visualizer">Code &nearr;</a>
+                  <a href="#" class="link-stamp" aria-label="Live Demo for Pathfinding Visualizer">Demo &nearr;</a>
+                </div>
+              </div>
+              <h3 class="project-name">Algorithm &amp; Pathfinding Visualizer</h3>
+              <p class="project-desc">
+                An interactive web visualizer rendering Dijkstra's algorithm, A* search, and Breadth-First search on real-time grids with customizable obstacle weights.
+              </p>
+              <ul class="tech-pills" role="list">
+                <li>JavaScript</li>
+                <li>HTML5 Canvas</li>
+                <li>Graph Algorithms</li>
+                <li>CSS3</li>
+              </ul>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="journal-card project-notebook-card">
+              <div class="project-top-row">
+                <span class="project-badge">Backend Service</span>
+                <div class="project-actions">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="link-stamp" aria-label="GitHub Repository for Micro-Task API">Code &nearr;</a>
+                  <a href="#" class="link-stamp" aria-label="Live Documentation for Micro-Task API">Docs &nearr;</a>
+                </div>
+              </div>
+              <h3 class="project-name">Micro-Task Orchestrator API</h3>
+              <p class="project-desc">
+                High-throughput RESTful backend service with Redis caching, query pagination, automatic rate-limiting, and PostgreSQL integration.
+              </p>
+              <ul class="tech-pills" role="list">
+                <li>Python</li>
+                <li>FastAPI</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- 6. TESTIMONIALS SECTION (Requested)                             -->
+      <!-- =============================================================== -->
+      <section class="content-section" id="testimonials" aria-labelledby="testimonials-heading">
+        <div class="container section-inner">
+          <header class="section-title-wrap">
+            <span class="section-number">05. Endorsements</span>
+            <h2 id="testimonials-heading" class="section-title">Testimonials &amp; Feedback</h2>
+            <p class="section-subtext">What professors, engineering mentors, and teammates say about working with me</p>
+          </header>
+
+          <div class="grid-three-col">
+
+            <!-- Testimonial 1 -->
+            <article class="journal-card testimonial-card">
+              <div class="quote-stamp">&ldquo;</div>
+              <blockquote class="testimonial-quote">
+                Sinchana possesses a rare combination of strong analytical problem-solving skills and an eye for clean user interfaces. Her project work demonstrates great maturity and diligence.
+              </blockquote>
+              <footer class="testimonial-author">
+                <cite class="author-name">Dr. K. Sharma</cite>
+                <span class="author-title">Professor of Computer Science &amp; Project Mentor</span>
+              </footer>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="journal-card testimonial-card">
+              <div class="quote-stamp">&ldquo;</div>
+              <blockquote class="testimonial-quote">
+                During our team hackathon, Sinchana took ownership of the full-stack architecture, writing clean, well-documented code and keeping the team motivated under tight deadlines.
+              </blockquote>
+              <footer class="testimonial-author">
+                <cite class="author-name">Rahul M.</cite>
+                <span class="author-title">Lead Developer &bull; Hackathon Teammate</span>
+              </footer>
+            </article>
+
+            <!-- Testimonial 3 -->
+            <article class="journal-card testimonial-card">
+              <div class="quote-stamp">&ldquo;</div>
+              <blockquote class="testimonial-quote">
+                Sinchana learns new frameworks and tools remarkably fast. Her curiosity and structured engineering approach make her an asset to any software development team.
+              </blockquote>
+              <footer class="testimonial-author">
+                <cite class="author-name">Priya V.</cite>
+                <span class="author-title">Senior Software Engineer &bull; Internship Mentor</span>
+              </footer>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- 7. CHATS & Q&A SECTION (Requested)                              -->
+      <!-- Interactive conversation simulator / FAQ & instant messenger    -->
+      <!-- =============================================================== -->
+      <section class="content-section alternate-bg" id="chats" aria-labelledby="chats-heading">
+        <div class="container section-inner">
+          <header class="section-title-wrap">
+            <span class="section-number">06. Interactive</span>
+            <h2 id="chats-heading" class="section-title">Chats &amp; Quick Q&amp;A</h2>
+            <p class="section-subtext">Click any prompt to ask me about my background, tech stack, or availability!</p>
+          </header>
+
+          <div class="chat-interface-wrapper">
+            <div class="chat-window">
+              <!-- Chat Header -->
+              <div class="chat-header-bar">
+                <div class="chat-avatar-status">
+                  <span class="chat-avatar">:&#41;</span>
+                  <div class="chat-user-info">
+                    <span class="chat-username">Sinchana N</span>
+                    <span class="chat-status"><span class="online-dot"></span> Online &bull; Ready to connect</span>
+                  </div>
+                </div>
+                <span class="chat-badge">Student Portfolio Bot</span>
+              </div>
+
+              <!-- Chat Message Stream -->
+              <div class="chat-messages" id="chat-stream" role="log" aria-live="polite">
+                <!-- Welcome Bot Message -->
+                <div class="message msg-incoming">
+                  <div class="msg-bubble">
+                    Hi there! &#128075; Thanks for stopping by my portfolio. Ask me anything or select one of the quick prompts below!
+                  </div>
+                  <span class="msg-time">Just now</span>
+                </div>
+              </div>
+
+              <!-- Quick Prompt Buttons -->
+              <div class="chat-prompt-chips" aria-label="Suggested questions">
+                <button type="button" class="prompt-chip" data-question="Are you available for internships?">
+                  Are you open for internships? &#128188;
+                </button>
+                <button type="button" class="prompt-chip" data-question="What technologies are you most passionate about?">
+                  What technologies do you love? &#9889;
+                </button>
+                <button type="button" class="prompt-chip" data-question="How can we collaborate or reach out?">
+                  How can we get in touch? &#128233;
+                </button>
+              </div>
+
+              <!-- Chat Input Bar -->
+              <form class="chat-input-form" id="chat-form">
+                <input type="text" id="chat-input" placeholder="Type a message or question..." autocomplete="off">
+                <button type="submit" class="btn-chat-send" aria-label="Send message">
+                  Send &rarr;
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- 8. CONTACTS SECTION (Requested)                                 -->
+      <!-- =============================================================== -->
+      <section class="content-section" id="contact" aria-labelledby="contact-heading">
+        <div class="container section-inner">
+          <header class="section-title-wrap">
+            <span class="section-number">07. Connect</span>
+            <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+            <p class="section-subtext">Looking for an intern, project partner, or want to say hello? Drop a message!</p>
+          </header>
+
+          <div class="grid-two-col">
+            
+            <aside class="journal-card contact-info-panel">
+              <h3 class="card-heading">Let's Build Something</h3>
+              <p>
+                I am actively seeking software development internship opportunities and collaborative projects. Whether you have a question or an opportunity, my inbox is open!
+              </p>
+
+              <address class="contact-methods">
+                <div class="contact-method-item">
+                  <span class="method-label">Email:</span>
+                  <a href="mailto:sinchana@example.com" class="method-val">sinchana@example.com</a>
+                </div>
+                <div class="contact-method-item">
+                  <span class="method-label">Location:</span>
+                  <span class="method-val">Bengaluru / Karnataka, India</span>
+                </div>
+                <div class="contact-method-item">
+                  <span class="method-label">Status:</span>
+                  <span class="method-val status-available">Open for Internships &bull; 2026/2027</span>
+                </div>
+              </address>
+
+              <div class="social-links-wrap">
+                <h4 class="social-title">Professional Profiles:</h4>
+                <div class="social-tags-list">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-tag-link">GitHub &nearr;</a>
+                  <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-tag-link">LinkedIn &nearr;</a>
+                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-tag-link">Twitter/X &nearr;</a>
+                </div>
+              </div>
+            </aside>
+
+            <article class="journal-card contact-form-panel">
+              <h3 class="card-heading">Send a Direct Message</h3>
+              <form action="#" method="POST" class="journal-form" id="main-contact-form">
+                <fieldset>
+                  <legend class="visually-hidden">Contact Form</legend>
+                  
+                  <div class="form-row">
+                    <label for="name-input">Your Name <span class="req">*</span></label>
+                    <input type="text" id="name-input" name="name" placeholder="e.g. Alex Morgan" required autocomplete="name">
+                  </div>
+
+                  <div class="form-row">
+                    <label for="email-input">Your Email <span class="req">*</span></label>
+                    <input type="email" id="email-input" name="email" placeholder="e.g. alex@company.com" required autocomplete="email">
+                  </div>
+
+                  <div class="form-row">
+                    <label for="subject-input">Subject <span class="req">*</span></label>
+                    <input type="text" id="subject-input" name="subject" placeholder="e.g. Internship Opportunity / Collaboration" required>
+                  </div>
+
+                  <div class="form-row">
+                    <label for="message-input">Message <span class="req">*</span></label>
+                    <textarea id="message-input" name="message" rows="4" placeholder="Tell me about the role, project, or say hello..." required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn-notebook-primary btn-submit">
+                    Send Message :&#41;
+                  </button>
+                </fieldset>
+              </form>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- =================================================================== -->
+    <!-- FOOTER                                                              -->
+    <!-- =================================================================== -->
+    <footer class="journal-footer">
+      <div class="container footer-content">
+        <div class="footer-left">
+          <span class="footer-logo">Sinchana :&#41;</span>
+          <p class="footer-tagline">Crafting thoughtful code &amp; human software experiences.</p>
+        </div>
+        <div class="footer-right">
+          <small class="footer-copy">&copy; <time datetime="2026">2026</time> Sinchana N. All rights reserved.</small>
+          <a href="#hero" class="back-link">Back to top &uarr;</a>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- End site-main-wrapper -->
+
+  <!-- Interactive JavaScript for Navigation, Chat simulator & smooth behaviors -->
+  <script src="script.js"></script>
+</body>
+</html>
